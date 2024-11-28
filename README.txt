@@ -21,6 +21,13 @@ Question 4: Schedule Tasks with Deadlines Using Max Priority Queue
 You are given N tasks, each with a profit and a deadline. Write a Python program to schedule the tasks such that the maximum profit is achieved, using a Max Priority Queue.
 Each task must be completed within its deadline (1-based index), and only one task can be scheduled at a time.
 
+Input Format
+1.	An integer N, the number of tasks.
+2.	N lines containing two integers each: profit and deadline of a task.
+Output Format
+1.	The maximum profit that can be achieved.
+2.	The list of scheduled tasks in the order they are executed.
+
 
 Github Link:
 https://github.com/FV101LW/hw2_1123533.git
