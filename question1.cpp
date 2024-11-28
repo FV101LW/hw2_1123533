@@ -1,3 +1,7 @@
+// Wei-li O. Lin
+// 1123533
+// 11-28-2024
+// Homework 2 - Question 1
 #include <iostream>
 #include <vector>
 #include <queue>
