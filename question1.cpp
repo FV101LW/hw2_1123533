@@ -2,6 +2,7 @@
 #include <vector>
 #include <queue>
 #include <algorithm>
+#include <sstream> // For comma-separated input
 using namespace std;
 
 struct treeNode {
@@ -24,7 +25,7 @@ treeNode* BuildTree(const vector<int>& levelorder) {
         treeNode* current = q.front();
         q.pop();
         
-        if (levelorder [i] != -1) {
+        if (i < levelorder.size() && levelorder[i] != -1) {
             current->left = new treeNode(levelorder[i]);
             q.push(current->left);
         }
@@ -56,20 +57,28 @@ int diameterBinaryTree(treeNode* root) {
     return diameter;
 }
 
+vector <int> ParseInput(const string& input) {
+    vector <int> result;
+    stringstream ss(input);
+    string token;
+    while (getline(ss, token, ',')) {
+        result.push_back(stoi(token));
+        }
+        return result;
+}
+
 int main() {
-    vector<int> levelorder;
+    string input;
     int val;
 
     cout << "Enter a list of integers(Comma-separated, use -1 for null nodes):" << endl;
-    while (cin >> val) {
-        levelorder.push_back(val);
-        if (cin.peek() == '\n') {
-            break;
-        }
-    }
+    getline(cin, input);
+
+    vector<int> levelorder = ParseInput(input);
     
     treeNode* root = BuildTree(levelorder);
-    
+
+    //Output
     cout << diameterBinaryTree(root) << endl;
 
     return 0;
