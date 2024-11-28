@@ -26,7 +26,7 @@ struct Task {
 int main() {
     int N;
     cin >> N;  // Number of operations
-    
+
 
     priority_queue<Task> taskQueue;  // Max-heap priority queue to manage tasks
 
@@ -65,7 +65,7 @@ int main() {
     // Print remaining tasks
     cout << "Remaining Tasks: [";
     for (int i = 0; i < remainings.size(); i++) {
-        cout << "(" << remainings[i].name << ", " << remainings[i].priority << ")";
+        cout << "('" << remainings[i].name << "'" << ", " << remainings[i].priority << ")";
         if (i < remainings.size() - 1) {
             cout << ", ";  // Print a comma for all but the last task
         }
