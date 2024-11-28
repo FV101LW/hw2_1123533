@@ -47,7 +47,7 @@ int main() {
             if (!taskQueue.empty()) {
                 // Fetch n' remove the task with the highest priority
                 Task highestPriority = taskQueue.top();
-                cout << highestPriority.name << endl;
+                cout << highestPriority.name << endl; //NOTE: For some reason, it keeps displaying the Task first whenever GET is inputted, rather than altogether after finishing the input.
                 taskQueue.pop();  // Remove the task after it's fetched
             }
         }
