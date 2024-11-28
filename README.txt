@@ -4,12 +4,6 @@ Homework 2 of Data Structures.
 Question 1: Binary Tree - Find the Diameter of a Binary Tree
 Write a program to calculate the diameter of a binary tree. The diameter of a binary tree is the length of the longest path between any two nodes in the tree. The path may or may not pass through the root.
 
-Input Used: (This is the input used to test program)
-
-
-Output:
-
-
 Question 2: Heap Sort - Build a Priority Queue for Tasks
 Write a program to manage a task priority queue using a max heap. Each task has a name and a priority level. Your program should allow:
 1.	Add a Task: Add a task with a given priority.
@@ -40,10 +34,14 @@ Your program should:
 3.	Continue this process until all elements from all arrays are merged.
 
 Input used:
-
+4
+1 5 9
+2 6
+3 7 10
+4 8
 
 Output:
-
+Merged Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 Question 4: Schedule Tasks with Deadlines Using Max Priority Queue
 You are given N tasks, each with a profit and a deadline. Write a Python program to schedule the tasks such that the maximum profit is achieved, using a Max Priority Queue.
@@ -57,10 +55,16 @@ Output Format
 2.	The list of scheduled tasks in the order they are executed.
 
 Input used:
-
+5
+88 1
+25 2
+45 1
+32 2
+22 1
 
 Output:
-
+Maximum Profit: 120
+Scheduled Tasks: [88, 32]
 
 
 Github Link:
