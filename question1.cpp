@@ -59,9 +59,13 @@ int diameterBinaryTree(treeNode* root) {
 int main() {
     vector<int> levelorder;
     int val;
-    
+
+    cout << "Enter a list of integers(Comma-separated, use -1 for null nodes):" << endl;
     while (cin >> val) {
         levelorder.push_back(val);
+        if (cin.peek() == '\n') {
+            break;
+        }
     }
     
     treeNode* root = BuildTree(levelorder);
